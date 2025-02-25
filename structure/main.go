@@ -19,6 +19,7 @@ type Address struct {
 type Contact struct {
 	Email string
 	Phone string
+	Fax   string
 }
 
 type Employee struct {
@@ -34,7 +35,7 @@ func main() {
 	prince.FirstName = "Prince"
 	prince.LastName = "Agarwal"
 	prince.Age = 24
-	// fmt.Println("Prince person : ", prince)
+	fmt.Println("Prince person : ", prince)
 
 	person1 := Person{
 		FirstName: "Akash",
@@ -65,6 +66,7 @@ func main() {
 		Area:  "Ranchi",
 		State: "Jharkhand",
 	}
+	employee1.Person_Contact.Fax = "Fax@1984616"
 
 	fmt.Println("Employee 1 : ", employee1)
 
